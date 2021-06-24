@@ -1,0 +1,16 @@
+WORKLOG BAKTI TECH
+
+{
+    "gitlab-token": {
+        "gitlab.com": "J7JanM2pUPscucaC8bPs"
+    }
+}
+
+di serviceprovider
+
+public fucntion packageRegistered()
+{
+require_once helpers/
+}
+
+pakai Auth::user();

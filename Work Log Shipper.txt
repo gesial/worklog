@@ -1,0 +1,547 @@
+Work Log
+
+==========================================================================
+15 April 2021
+==========================================================================
+- on boarding with people
+- on boarding with direct manager
+- register privy, kulina
+- say hi to Maul and Jeby
+
+==========================================================================
+16 April 2021
+==========================================================================
+- 1 on 1 weekly target with pak Agus
+    ---> Sicepat
+    ---> TMS metrics next rabu maria
+    ---> Training TMS, BOS and HQ
+    ---> 1 on 1 setup meeting
+    ---> Review OKR and make sure understand project in Roadmap and OKR
+    ---> Setup OKR for Gesi next week
+    ---> Join lead stand up in afternoon
+    ---> Setup story in JIRA
+
+SiCepat cashless meeting
+- Shipper baru drop barang itu belum manifest
+- manifest ketika sudah masuk gerai sudah ditimbang
+
+==========================================================================
+17 April 2021
+==========================================================================
+- 1on1 Maria
+- shared wh, sistem warehouse dari Shipper
+- dedicated wh, sistem orang dari Shipper Sayurbox Sidoarjo
+- system punya Sirclo ODOO, manpower dari Shipper
+- wh acquisition, Utomodeck, manpower bisa semua diganti Shipper atau tetep utomodeck kasih WH manager, sistem Shipper
+- jualan sistem, infentrax merlin
+- Honeywell B2C
+- wms B2B
+
+==========================================================================
+19 April 2021
+==========================================================================
+- Training TMS
+- Control Tower admin yg ngupload2 dan berhubungan dengan client
+- pickup + drop off
+- drop off
+- macro dulu sebelum upload ke shipper.transflynd.com setelah dimacro, data location ada yg kosong
+- tms.transflynd --> upload product, location, order
+- dispatch --> new dispatch nama driver Nuraya Saripan motor honda supra 2018
+- pickup dropoff susunan saat dispatcher assign driver
+- total volume masih pakai cbm, dan dia ngitung volume saat pickup malah ditotal
+- route optimization --> apakah bisa pickup di driver A, drop off di driver B
+- Dashboard > report > Shipper Reports
+
+[3PL Integration]
+- Customer Shipper adalah yang butuh pickup/drop off
+--- register, login, see shipper web/app
+- pricing crawling pricing service
+- rates service based on weight, cashback, promo. rules
+- belum ada gojek grab
+
+- ketika order sudah dibuat bisa jadi udah minta AWB ke 3PLnya
+- mitra.shipper.id counter shipper
+
+1. ga harus ke kounter tinggal di pickup
+2. regular pickup 1/2x sehari
+3. cashback
+
+Repetitive issue
+1. rate ga sama
+2. AWB down
+3. tracking down
+
+[1 on 1 mas Wendy Adi]
+In Progress:
+- Squad lead
+
+Incoming Project:
+- EM
+
+- issue daily stand up
+
+agent --> BBS Binary Beast Squad
+merchant --> TTS Titan Tech Squad
+3pl integration --> GK
+transflynd
+
+kontak list tiap 3PL tech, product, business, ops, ops ticket, kontak and communication channel
+
+==========================================================================
+20 April 2021
+==========================================================================
+- Training HQ
+
+1. Sicepat drop cashless
+2. maintain data ongkir per daerah
+3. Hubless J&T
+4. Recommended by Shipper rate
+5. RPX custom integration for Forstok-Minuman (still negotiating)
+
+- SiCepat Cashless only AWBcheck and drop cashless
+- scan AWB --> AWB check (v1) --> inquiry
+- drop cashless (v1) --> booking + confirm
+
+30 April rencana deployment
+DOP = Drop Off Point
+RBS = Recommended by Shipper
+Disky designer
+Pandi data
+
+- Eben Ezer (3PL dan vendor relationship)
+- vendor relationship
+- Fleet --> Jessica dulu tim partnership
+- harga, relationship, komisi, diskon
+- isu2 3PL
+- 3pl relationship membangun relasi dengan 3pl nya, tapi biasanya dari manajemen atau mitra yg rekomendasiin
+
+1. mau buka apa? dan kenapa? buka cargo tapi ternyata tidak menambah volume
+2. biasanya kalau ada proof lebih mudah, selain itu nanti pak Budi yang menentukan
+3. pak Eben hubungi 3PL
+4. minta API docs
+5. development
+6. on board
+
+- maintain harga 3PL
+
+
+==========================================================================
+21 April 2021
+==========================================================================
+- Weekly metrics
+- J&T Hubless
+- client API only, yg pickup J&T, sekarang hanya bisa drop off
+- Eben Andin
+- 2020 masih bisa pickup, mulai 2021 prefix JO hanya bisa drop off
+- agreement terkait 3PL
+- Moka awalnya tau dipickup skrg didropoff
+- komplain:
+    - delay pickup
+    - drop off no komplain krn lgsg aktif
+- agreement dengan sales dan client, terkait perubahan J&T client jadi drop off, confirm ke Eben dan Sales
+- kenapa hubless cuma client API?
+    - Januari - April 15rb JNE
+    - Wahana
+    - Recommended by Shipper
+    - SiCepat
+    - GoSend
+    - Januari - April 2739 JNT Hubless
+- J&T hubless: moka
+- mitra --> FM = first mile --> J&T pickup
+- Moka masih pickup
+- kalo J&T bisa otomatis jadi hubless
+- kalo non J&T request dulu ke tim tech utk jadi hubless, asalkan client mau ganti jadi J&T --> Demas Joshua
+- dulu bisa ganti jadi tombol hubless
+- Jessica utk agreement dengan client API
+- pick up cuma 1, cost, delay pickup
+
+ideal flow:
+- terms and agreement J&T
+- tidak perlu remind2 utk pickup
+- cek sistem apakah kita udah ngasih tau bahwa mereka harus pickup
+- memudahkan mengubah order jadi hubless CT sendiri --> otomatis rule pindah dari mitra, FM, jnt
+
+==========================================================================
+22 April 2021
+==========================================================================
+- transflynd
+- terbaru 2.15.6
+- utomodeck, wahyu, sampoerna request pake whatsapp, HMS? --> notif pending, started, finish
+- 28 April minta feedback proposal dari Transflynd
+- custom report --> update compile data estimasi 1 minggu
+- loading unloading ga ada triggernya
+-
+
+==========================================================================
+23 April 2021
+==========================================================================
+- pake WMS/OMS siapa?
+- user flow pake OMS ini?
+
+
+==========================================================================
+26 April 2021
+==========================================================================
+[OMS]
+- data
+-- owner code OMS = customer goods owner di WMS
+- platform
+--platform configuration
+- shop id
+- warehouse area mapping
+- comodity management
+- barcode management
+
+
+akun WMS
+wmsadmin001
+12345678
+
+wmsadmin002
+12345678
+
+wmsadmin003
+WMSADMIN003
+
+shipperadmin
+admin123
+
+PPS team honeywell
+
+akun OMS
+shipperadmin
+admin123
+
+akun intools staging
+yayan@shipper.id
+qawsed1q2w3e
+
+
+==========================================================================
+6 Mei 2021
+==========================================================================
+WMS Honeywell:
+- Create SO --> baru dicreate (distribution has been notified)
+- Allocated --> sudah diallocate stock
+- Partially picked --> wave plan sudah dibikin, picking sudah jalan tapi belum selesai
+- Picked --> picking sudah selesai
+- Partially cartonized
+- Cartonized --> Packing, shipment check
+- Loaded --> sudah packing, sudah diconfirm ke loading task (SO sudah dibind dengan id loading), sudah diconfirm load
+- Shipped --> loaded task sudah diclose, barang sudah keluar gudang (1 event dengan shipment order closed)
+- Shipment Order closed --> finish, sudah dihandover, barang sudah keluar gudang --> OMS already shipped
+
+Order no oms
+Transaction number dari Lazada, Shope,, dkk
+
+
+tim OMS:
+1. Open API untuk client
+--- connect ke Merlin --> hari ini release, cobain sama Intrepid, inbound, outbound, inventory
+--- connect ke Honeywell --> mulai desain dan coding mingdep
+2. OMS yg connect ke Matahari
+3. Custom client integration
+
+intrepid
+acommerce --> british american tobacco --> multi warehouse --> September
+JMK --> importir kain, sudah punya ERP, kita mau take over warehouse, mereka maunya API
+Sirclo --> integrate, ERP Odoo, inbound, outbound
+JBL <> IMS
+Herbal
+
+
+==========================================================================
+11 Mei 2021
+==========================================================================
+- ngobrol sama maul
+- email Yoga
+- ngobrol Iman
+    - merchant:
+        - pake BOS dashboard kita
+        - pake shipper kita
+        - pake API kita
+
+        - plugin woocommerce (tokopress.id) --> beli plugin ke tokopress.id lalu beli API ke kita (cuma bisa cek ongkir, ga bisa create order)
+        - partner Shopify (ongoing logistic integration, myshopagency) --> apakah masih ada bandwidth engineer Shopify? --> from Nicko Baskara
+    - kenapa kita ga integrate langsung ke open API Shopify/WooCommerce
+    - AM Aliekha, desty minta integrasi
+
+
+Tim PPS (Wendi):
+1. Datahub utk connect ke 
+
+Tim OMS (Alvin Radeka):
+1. Open API untuk client
+--- connect ke Merlin --> hari ini release, cobain sama Intrepid, inbound, outbound, inventory
+--- connect ke Honeywell --> mulai desain dan coding mingdep
+2. OMS yg connect ke Matahari
+3. Custom client integration
+
+
+Honeywell:
+- tranfer knowledge
+- sales team SoW
+
+marketplace:
+- Tokopedia
+- Bukalapak
+
+Webstores:
+- pelajarin API
+- webstore mana?
+
+Nandi, Agus, Marvin, Kurniadi, Yoga
+oms honeywell ga bisa apa?
+
+==========================================================================
+24 Mei 2021
+==========================================================================
+MabangERP 3.0
+1. product selection: product upload to multi channel, product trend, smart supplier, stock opt
+2. publication: product upload to multi, single product data aggregator, product translation
+3. SaaS ERP
+    - order mgmt: API interface from 60 platform, unique order, get AWB
+    - purchase: stock opt
+    - logistics: 3pl selection (1000 3pls integration), tracking
+    - cs: customer classification gold, silver, bronze, robot reply, cs workload report
+    - commodity: stock omni channel, classification popular, flat, unsalable
+
+MabangWMS
+- opt picking path
+- 0 inventory delivery
+- inv mgmt, accuracy 99.99%, reduce dead rate, increase turnover rate
+- perf report
+
+MabangERP Amazon: in-depth integration with Amazon
+
+Mabang Cloud Warehouse: use shared wwarehouse from Mabang, 2.5 Yuan/order
+
+Cross Border Distribution: sell across country
+
+Supply Chain Mgmt: supplier rating, financial statement, 
+
+After sales service
+- training service
+- implementation service
+- customer service: 7 x 12 hour within 15mins
+- technical service
+
+
+================================================
+
+Simon
+Jeby
+Agus
+Denta
+Nandi
+
+Anto (Distanto), handle logistic agen
+Htow do we integrate MP order shipment marketplace to use ours?
+
+
+================================================
+Seller enable
+dependency on marketplace
+integrate with POS
+Haistar 
+2-3 years ago, small/micro seller enabler
+now bigger store use TokoTalk --> overlapping with marketplaces
+
+partnership flow
+benefit for both sides, flow
+fulfillment and logistic
+technical document to, introduction material
+like a proposal, business
+
+Shipper enable free shipping to sellers
+
+- TokoTalk business is seller enabler, formerly focusing on small/micro seller but expanding to bigger seller
+- TokoTalk big seller mostly has dependency to other marketplace
+- TokoTalk plans to integrate with fulfillment, logistic, and POS partners
+- Shipper needs to make a brief introduction material regarding the plan with TokoTalk:
+    - partnership flow (fulfillment and logistic)
+    - benefits for both sides
+    - technical documentation
+
+================================================
+Anto:
+- marketplace lgsg dapet resi otomatis, logistic agent yg kita punya jne, jnt, ninja, lex
+- kalo regular, ops tim sorting hub, apa pun yg non booking code, akan upload ke HQ
+- SH: pembuatan resi ada yg regular, lewat logistic agent
+- cashless kita ambil untung dari komisi logistic agent
+- regular margin dari corporate
+- kalo JNE, dari HQ kita lgsg ngeluarin otomatis tapi ga bisa discan sama agent
+- LEX pusat (MDOP), LEX agent (RDOP) regular drop off point --> cuma ketahuan di seller app, big seller biasanya dipickup oleh pusat
+- confirm ke tim CT mengenai flow RPU, dan update resi --> Anetsya Anastasia
+- regular, CT bikin order di HQ, SH minta resi ke logistic agent (Wahana, JNE Regular, etc), SH input resi ke HQ
+- JNE dan JNT lgsg aktif begitu discan di agen, Ninja baru aktif ketika driver pusat pickup ke agen
+- Mina Yulia dia skrg yang pegang Logistic Agent
+
+
+- order pending dikomunikasiin di client
+- matchingin label ke order
+
+
+Iman: API untuk internasional dan gojek grab
+top 100 100-1000 order/hari
+
+
+===============
+2 June 2021
+
+Hi all, thank you for joining the meeting. Here's the MoM for today's meeting:
+- The details for marketplace integration has been done by Shipper (except Bukalapak), the details will be shared by Gesi in the following email. Honeywell team will get back to Shipper within a week for any question and discussion.
+- Shipper has a blocker for OMS and Datahub knowledge, so Shipper team can't easily configure/customize the OMS, Datahub, and Marketplace Integration area. By the end of tomorrow, Suren should send the documentation for OMS and Datahub.
+- Current project is expected to go live on 8th June, and 3-4 weeks is needed to maintain and monitor post deployment. So, in June until early July will focus more on requirement study and discussion. Next project will start development at early-mid July.
+- Honeywell and Shipper team to review possibility of increasing headcount in this Honeywell-Shipper project. Looping to Kathy.
+
+Shopify:
+- 1 order, pecah by location, 1 order include multiple fulfillment order
+- 
+
+
+10th June Partial go live OMS, WMS, Intools
+17th June Lazada
+
+Mabang to integrate end of August, 22jt
+we integrate around 1 week
+
+marketplace integration --> invalidated, tech
+inbound volume from Chinese
+
+
+Mabang API Docs:
+- Get orders (can be filtered by order status, date, page, row per page), include shipping label PDF URL (required for Lazada, JD ID, etc)
+- Update order status (accept, received, sent, exception, cancel)
+    - accept: Supplier download the order, confirm and return tracking number. Order can be cancelled.
+    - received: Supplier receive tha package and do the warehousing work.
+    - sent: Supplier send the package, with updated airway bill if it is modified.
+    - exception: Incorrect order information.
+    - cancel: Order can be cancelled if order status is Pending Inventory, Confirmed, or Stored.
+- Webhook orderChange
+    - setup in Escort logistic platform
+    - payload only contains order number, need to request Get orders
+
+Intrepid:
+- Inbound manual by email
+- Outbound manual by email
+- akun utk multiple user
+- PO status
+- by PO, not only by items date
+- outbound breakdown status
+- angka di chart bar
+- inbound vvs outbound chart comparison
+- tabel 1: seminggu barang masuk vs keluar
+- on boarding process
+
+
+=====================================================
+9 Juni 2021
+14 Juni 2021 deadline knowledge transfer
+
+
+10 Juni 2021
+Flash Coffee
+- Syahla dan Dewa Krisna
+- current flow:
+    - weekly outbound order via email
+    - for inbound it depends
+    - excel/sheet SKU, stock, pretty manual
+    - plan to use ERP Oracle NetSuite --> soonest will be August, no fixed date yet
+- outbound flow:
+    - send order weekly basis, through email
+    - number of orders is send to several stores
+    - stores will request the products to Flash Coffee, and FC will send the orders weekly by email to Shipper
+    - what if inventory is low?
+    - if back order (out of stock), notify FC, if low stock no notify
+    - order from stores to FC using min max system, if stock reaches min, then restock to max
+    - using deliveree, better price coompared to Shipper --> ams Derry has the comparison from FC
+    - FC tracks from deliveree app
+    - 16 stores --> 1 order banyak item, costnya per item
+    - 3 blindvan every week
+    - jam operasional terlalu siang jam 10, kadang 10.30 baru loading, jam 11:30 juga pernah
+    - cuma 1 gate di warehouse DOS Karawaci
+    - konfirmasi pickup ke Hilma/Irfa
+    - 
+=====================
+app id / fs id 15228
+client id 4d669700e8844bbbb8c3ee1a0d8f4480
+client secret 0ce726ca4abb408f81c4639b64c9e253
+
+Seller
+pt_pakde_solusi_digital.sellerapi.test.account2@tokopedia.com
+mZ0xzbDi0
+https://www.tokopedia.com/sellerapi-shippersandbox
+
+Buyer
+pt_pakde_solusi_digital.sellerapi.test.account1@tokopedia.com
+jenqQ7SW4
+
+800+ jualan di Indonesia
+IDR 40jt
+70% ga punya local warehouse
+
+
+===============
+MDS
+- Produk
+    - parent child SKU
+    - Shipper daftarin draft produk
+    - Tim MDS yg akan ngelengkapin foto dll
+    - create, update, delete product from RMS to Tokopedia
+- Inventory
+    - reserved stock absolute
+    - ratio buffer
+    - magento update stock real time pake webhook
+- Order
+    - dari Magento transfer 190 ke 150
+    - store id nya Shipper 190 ke Tokped
+- Return
+    - manual
+
+
+- timeline proposal
+- reason
+- scopenya apa
+
+===================
+
+- There's still an open question regarding Honeywell feasibility and estimation on the marketplace integration.
+- Currently preparing the data mapping on Tokopedia <==> our Open API in case Tokopedia will be developed in-house.
+- This sprint pairing with Alvin to prepare POC for Tokopedia <==> Open API in-house development.
+- Discuss with Matahari team regarding scope of project in Tokopedia integration. They also add a product integration and SFTP transfer stock in the scope. Will discuss further if the business has been cleared.
+
+
+====================
+18 Juni 2021
+====================
+Lazada Selasa/Rabu 22-23 Juni
+
+Lazada value proposition:
+- 
+
+==============
+22 Juni 2021
+==============
+- Marketplace Integration
+- MDS Integration
+- Research Client Dashboard Next Project
+
+
+23 Juni
+1.2. WooCommerce Webstore
+Product id and SKU mapping
+Download orders and get order information
+Update order status
+Inventory synchronization
+1.3. Shopify Webstore
+Product id and SKU mapping
+Download orders and get order information
+Order id and order number mapping
+Update order status
+Inventory synchronization
+
+
+24 Juni
+username : gesi
+pass : w$nhJXsM
